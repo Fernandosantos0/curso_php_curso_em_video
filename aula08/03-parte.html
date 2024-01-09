@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contador de números</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <div>
+            <form action="03-parte.php" method="POST">
+                <label for="c-inicio">Início:</label>
+                <input type="number" name="inicio" id="c-inicio" class="input-number" placeholder="Nº" required>
+                <br>
+
+                <label for="c-fim">Fim:</label>
+                <input type="number" name="fim" id="c-fim" class="input-number" placeholder="Nº" required>
+                <br>
+
+                <label for="c-slc">Incremento</label>
+                <select name="slc" id="c-slc">
+                    <option value="" disabled selected>Seleciona</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+
+                <button type="submit" class="btn">Gerar</button>
+            </form>
+        </div>
+    </body>
+</html>

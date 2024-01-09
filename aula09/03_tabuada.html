@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de PHP | Tabuada</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/estilo.css">
+    </head>
+    <body>
+        <div>
+            <form action="03_tabuada.php" method="POST">
+                <label for="c-num">Número:</label>
+                <select name="num" id="c-num">
+                    <option value="" disabled selected>Seleciona</option>
+                </select>
+                <br>
+
+                <button type="submit" class="btn">
+                    Tabuada
+                </button>
+            </form>
+        </div>
+
+        <script>
+            const slc = document.getElementsByName('num')[0];
+
+            let i = 1;
+            do {
+                const option = document.createElement('option');
+                option.setAttribute('value', i);
+                option.textContent = i;
+                slc.appendChild(option);
+                i++;
+            } while(i < 11)
+        </script>
+    </body>
+</html>

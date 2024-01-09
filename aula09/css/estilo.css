@@ -1,0 +1,83 @@
+html {
+    font: 15pt Arial;
+}
+
+body {
+    background: url("wallpaper-php.jpg") no-repeat top center fixed;
+    background-size: cover;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 15pt;
+    color: green;
+}
+
+div::before {
+    content: " Curso de PHP para Iniciantes - by Gustavo Guanabara ";
+    font: 10pt Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #273747;
+    padding: 5px;
+    display: block;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 560px;
+}
+
+div {
+    background-color: rgba(255,255,255,.8);
+    margin: 100px auto 100px auto;
+    padding: 10px;
+    width: 550px;
+    min-height:300px;
+}
+
+a {
+    color: #273747;
+    text-decoration: none;
+    font-weight: bold;
+    font: 11pt Helvetica;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+span.foco {
+    font-weight: bold;
+    color: #7e050c;
+}
+
+.input-number {
+    width: 50px;
+}
+
+.btn {
+    padding: 8px 15px;
+    margin-top: 10px;
+    background-color: #3e6b99;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-weight: 100;
+    letter-spacing: 2px;
+    transition: all 800ms;
+    -webkit-transition: all 800ms;
+    -moz-transition: all 800ms;
+    -ms-transition: all 800ms;
+    -o-transition: all 800ms;
+}
+
+.btn:hover {
+    background-color: #20558a;
+}

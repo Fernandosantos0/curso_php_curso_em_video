@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Curso de PHP</title>
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="exercicio04.js" defer></script>
+    </head>
+    <body>
+        <div>
+
+            <form action="exercicio04.php" method="POST">
+                <label for="c-nome">Nome:</label>
+                <input type="text" id="c-nome" name="nome" placeholder="Digite seu nome">
+                <br>
+
+                <label for="c-sobrenome">Sobrenome:</label>
+                <input type="text" id="c-sobrenome" name="sobrenome" placeholder="Digite seu sobrenome">
+                <br>
+
+                <label for="c-ano">Ano de Nascimento:</label>
+                <select name="ano" id="c-ano">
+                    <option value="" disabled selected>Selecione</option>
+                </select>
+                <br>
+
+                <fieldset>
+                    <legend>Sexo</legend>
+
+                    <input type="radio" name="sexo" id="c-masculino" name="M" checked>
+                    <label for="c-masculino">Masculino</label>
+
+                    <input type="radio" name="sexo" id="c-feminino" name="F">
+                    <label for="c-feminino">Feminino</label>
+                </fieldset>
+
+                <input type="submit" style="cursor: pointer;" value="Enviar">
+            </form>
+
+        </div>
+    </body>
+</html>
